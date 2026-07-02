@@ -16,6 +16,9 @@ const ITEMS_PER_PAGE = 12
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('All')
   const [visible, setVisible] = useState(ITEMS_PER_PAGE)
+  const [newsletterEmail, setNewsletterEmail] = useState('')
+  const [newsletterSent, setNewsletterSent] = useState(false)
+  const [newsletterSending, setNewsletterSending] = useState(false)
 
   const featured = blogPosts[0]
 

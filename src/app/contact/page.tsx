@@ -20,14 +20,30 @@ const services = [
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setSending(true)
+    setError('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error('Failed to send')
+      setSubmitted(true)
+    } catch {
+      setError('Something went wrong. Please try again or email us directly.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -142,7 +158,8 @@ export default function ContactPage() {
                       placeholder="Tell us about your project..."
                     />
                   </div>
-                  <Button type="submit" variant="primary" size="lg">Send Message</Button>
+                  {error && <p className="text-red-600 text-sm bg-red-50 p-3 rounded-lg">{error}</p>}
+                  <Button type="submit" variant="primary" size="lg" disabled={sending}>{sending ? 'Sending...' : 'Send Message'}</Button>
                 </form>
               )}
             </ScrollReveal>

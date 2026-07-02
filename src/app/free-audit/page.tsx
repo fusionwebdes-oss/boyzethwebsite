@@ -36,6 +36,8 @@ export default function FreeAuditPage() {
   const [scanResult, setScanResult] = useState<ScanResult | null>(null)
   const [form, setForm] = useState({ name: '', email: '', phone: '', business: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [formError, setFormError] = useState('')
 
   const handleScan = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -57,10 +59,24 @@ export default function FreeAuditPage() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
-    setPhase('done')
+    setSending(true)
+    setFormError('')
+    try {
+      const res = await fetch('/api/audit-report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, url: url.trim() }),
+      })
+      if (!res.ok) throw new Error('Failed to send')
+      setSubmitted(true)
+      setPhase('done')
+    } catch {
+      setFormError('Something went wrong. Please try again or email us directly.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -277,8 +293,9 @@ export default function FreeAuditPage() {
                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue focus:ring-2 focus:ring-blue/20 outline-none transition-all text-navy placeholder-gray-400 resize-none"
                         placeholder="Tell us about your business, what you offer, and your target audience..." />
                     </div>
-                    <Button type="submit" variant="primary" size="lg" className="w-full sm:w-auto">
-                      Send Me My Report
+                    {formError && <p className="text-red-600 text-sm bg-red-50 p-3 rounded-lg">{formError}</p>}
+                    <Button type="submit" variant="primary" size="lg" className="w-full sm:w-auto" disabled={sending}>
+                      {sending ? 'Sending...' : 'Send Me My Report'}
                     </Button>
                   </form>
                 </div>
