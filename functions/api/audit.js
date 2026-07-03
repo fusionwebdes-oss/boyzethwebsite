@@ -7,7 +7,7 @@ export async function onRequest(context) {
   if (!siteUrl) return new Response(JSON.stringify({ error: "Missing url parameter" }), { status: 400, headers })
 
   try {
-    const apiKey = context.env.PAGESPEED_API_KEY
+    const apiKey = context.env.PAGESPEED_API_KEY || "AIzaSyCEkh4h3__KnNv_-Xe_6HoiP74Hhvvir_I"
     const apiUrl = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed"
     const categories = ["PERFORMANCE", "SEO", "ACCESSIBILITY", "BEST_PRACTICES"]
     const params = new URLSearchParams({ url: siteUrl, key: apiKey })
