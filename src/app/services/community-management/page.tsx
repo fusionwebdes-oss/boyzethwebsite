@@ -162,7 +162,7 @@ export default function CommunityManagementPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Crisis Management Ready</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We're trained to handle PR challenges, negative feedback, and sensitive situations with professionalism and tact — protecting your brand's reputation at all times.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We&apos;re trained to handle PR challenges, negative feedback, and sensitive situations with professionalism and tact — protecting your brand&apos;s reputation at all times.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">
@@ -171,7 +171,7 @@ export default function CommunityManagementPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Brand Advocacy Focus</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We don't just manage conversations — we build structured advocacy programs that transform your most engaged members into brand ambassadors who amplify your message organically.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We don&apos;t just manage conversations — we build structured advocacy programs that transform your most engaged members into brand ambassadors who amplify your message organically.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">

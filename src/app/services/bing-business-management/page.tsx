@@ -153,7 +153,7 @@ export default function BingBusinessManagementPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Bing Expertise</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">Our team has deep knowledge of Bing's unique ranking factors, Webmaster Tools, and advertising platform — giving you a specialized advantage most agencies can't offer.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">Our team has deep knowledge of Bing&apos;s unique ranking factors, Webmaster Tools, and advertising platform — giving you a specialized advantage most agencies can&apos;t offer.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">

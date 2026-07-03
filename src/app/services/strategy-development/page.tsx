@@ -171,7 +171,7 @@ export default function StrategyDevelopmentPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Actionable Roadmaps</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">Your strategy won't sit on a shelf. We deliver clear, phased roadmaps with specific actions, timelines, budgets, and KPIs that your team can execute immediately.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">Your strategy won&apos;t sit on a shelf. We deliver clear, phased roadmaps with specific actions, timelines, budgets, and KPIs that your team can execute immediately.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">
@@ -180,7 +180,7 @@ export default function StrategyDevelopmentPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Long-Term Partnership</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We don't hand over a document and disappear. We partner with you to implement the strategy, track progress, and refine your approach as your business grows and markets evolve.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We don&apos;t hand over a document and disappear. We partner with you to implement the strategy, track progress, and refine your approach as your business grows and markets evolve.</p>
                 </div>
               </div>
             </div>

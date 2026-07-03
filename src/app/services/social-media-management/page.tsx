@@ -143,7 +143,7 @@ export default function SocialMediaManagementPage() {
             <SectionHeader
               subtitle="Why Choose Us"
               title="What Sets Boyzeth Solutions Apart"
-              description="We combine creative strategy with data-driven execution to deliver social media management that doesn't just build followers — it builds your business."
+              description="We combine creative strategy with data-driven execution to deliver social media management that doesn&apos;t just build followers — it builds your business."
               center
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
@@ -162,7 +162,7 @@ export default function SocialMediaManagementPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Multi-Platform Expertise</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We master every major platform — Instagram, Facebook, LinkedIn, Twitter, TikTok, and more — tailoring content and strategy to each platform's unique algorithm and audience.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We master every major platform — Instagram, Facebook, LinkedIn, Twitter, TikTok, and more — tailoring content and strategy to each platform&apos;s unique algorithm and audience.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">

@@ -171,7 +171,7 @@ export default function AnalyticsReportingPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Actionable Insights</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We don't just give you numbers — we tell you what they mean and exactly what to do about it. Every report includes prioritized recommendations for improving performance.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We don&apos;t just give you numbers — we tell you what they mean and exactly what to do about it. Every report includes prioritized recommendations for improving performance.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">

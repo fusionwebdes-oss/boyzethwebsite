@@ -171,7 +171,7 @@ export default function BlogWritingPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Topic Authority Focus</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We build content clusters around core topics to establish your site as the authoritative source in your niche, signaling expertise to Google's E-E-A-T framework.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We build content clusters around core topics to establish your site as the authoritative source in your niche, signaling expertise to Google&apos;s E-E-A-T framework.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">

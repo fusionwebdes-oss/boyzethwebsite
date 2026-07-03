@@ -162,7 +162,7 @@ export default function PaidAdvertisingPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Multi-Platform Mastery</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We manage campaigns across Google, Meta, LinkedIn, and Bing — finding the perfect platform mix for your business and optimizing each platform's unique strengths.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We manage campaigns across Google, Meta, LinkedIn, and Bing — finding the perfect platform mix for your business and optimizing each platform&apos;s unique strengths.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">

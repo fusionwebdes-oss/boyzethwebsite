@@ -143,7 +143,7 @@ export default function WebDevelopmentPage() {
             <SectionHeader
               subtitle="Why Choose Us"
               title="What Sets Boyzeth Solutions Apart"
-              description="We combine technical expertise with strategic thinking to deliver websites that don't just look great — they drive real business results."
+              description="We combine technical expertise with strategic thinking to deliver websites that don&apos;t just look great — they drive real business results."
               center
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
@@ -180,7 +180,7 @@ export default function WebDevelopmentPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Dedicated Support</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">You get a dedicated account manager and ongoing technical support. We don't just build your site and disappear — we partner with you for the long term.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">You get a dedicated account manager and ongoing technical support. We don&apos;t just build your site and disappear — we partner with you for the long term.</p>
                 </div>
               </div>
             </div>

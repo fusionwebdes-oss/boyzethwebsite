@@ -29,17 +29,7 @@ const regionLabels: Record<string, string> = {
   "greater-london": "Greater London",
 }
 
-const regionSlugToUrl: Record<string, string> = {
-  "north-east": "north-east-england",
-  "north-west": "north-west-england",
-  "yorkshire-and-the-humber": "yorkshire",
-  "east-midlands": "east-midlands",
-  "west-midlands": "west-midlands",
-  "east-of-england": "east-of-england",
-  "south-east": "south-east-england",
-  "south-west": "south-west-england",
-  "greater-london": "greater-london",
-}
+
 
 const serviceAreas = [
   { title: "Web Development", description: "Custom websites, web applications, and e-commerce platforms built with modern technology for speed, security, and scalability.", slug: "web-development" },
@@ -94,7 +84,7 @@ function getTownContent(town: { name: string; county: string; region: string }) 
     storyContent: [
       `${town.name} is a vibrant town in ${regionLabel}, home to a growing community of businesses that are embracing digital transformation. At Boyzeth Solutions, we help ${town.name}-based businesses build powerful online presences that attract customers, drive sales, and fuel long-term growth.`,
       `Our team understands the unique opportunities and challenges facing businesses in ${town.name}. Whether you need a new website, better search rankings, or a comprehensive digital marketing strategy, we bring local insight combined with global best practices to every project.`,
-      `From our headquarters in Lagos, Nigeria, we serve clients throughout the UK, including ${town.name} and the surrounding ${town.county} area. Our remote delivery model ensures seamless collaboration, regular communication, and outstanding results regardless of distance.`,
+      `From our headquarters in West Midlands, United Kingdom, we serve clients throughout the UK, including ${town.name} and the surrounding ${town.county} area. Our remote delivery model ensures seamless collaboration, regular communication, and outstanding results regardless of distance.`,
     ],
     whyTown: `We chose to offer dedicated services for ${town.name} because we believe every local business deserves access to world-class digital marketing expertise. The businesses of ${town.name} are the backbone of the local economy, and we are committed to helping them thrive in the digital age.`,
     ctaTitle: `Ready to Grow Your Business in ${town.name}?`,
@@ -117,7 +107,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const town = towns.find((t) => t.slug === slug)
   if (!town) return {}
 
-  const content = getTownContent(town)
   const regionLabel = regionLabels[town.region] || "the UK"
 
   return {
@@ -137,7 +126,6 @@ export default async function LocationPage({ params }: Props) {
   if (!town) notFound()
 
   const content = getTownContent(town)
-  const regionLabel = regionLabels[town.region] || "the UK"
   const faqItems = faqsByRegion[town.region] || faqsByRegion.default
 
   const localBusinessSchema = {
@@ -177,7 +165,7 @@ export default async function LocationPage({ params }: Props) {
     })),
   }
 
-  const heroImage = images[Math.floor(Math.random() * images.length)]
+  const heroImage = images[slug.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % images.length]
 
   return (
     <>

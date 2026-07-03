@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next"
 import { blogPosts } from "@/data/blog-posts"
 import { towns } from "@/data/towns"
 
+export const dynamic = "force-static"
+
 const BASE_URL = "https://www.boyzethsolutions.com"
 const OG_IMAGE = `${BASE_URL}/opengraph-image`
 

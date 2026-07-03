@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const features = [
   { title: "Profile Optimization", description: "We fully optimize your Google Business Profile with accurate business information, categories, attributes, and high-quality photos to ensure maximum visibility in local search results.", image: "https://picsum.photos/seed/gbp-feature-1/800/500" },
-  { title: "Review Management", description: "We implement a systematic approach to generating, monitoring, and responding to customer reviews — boosting your rating and showing Google you're an active, engaged business.", image: "https://picsum.photos/seed/gbp-feature-2/800/500" },
+  { title: "Review Management", description: "We implement a systematic approach to generating, monitoring, and responding to customer reviews — boosting your rating and showing Google you&apos;re an active, engaged business.", image: "https://picsum.photos/seed/gbp-feature-2/800/500" },
   { title: "Post Creation", description: "We create engaging Google Posts — including offers, events, updates, and product highlights — that appear directly in your GBP listing and attract local customers.", image: "https://picsum.photos/seed/gbp-feature-3/800/500" },
   { title: "Q&A Management", description: "We monitor and respond to questions on your profile, and proactively seed frequently asked questions with detailed answers to guide potential customers.", image: "https://picsum.photos/seed/gbp-feature-4/800/500" },
   { title: "Insights Analysis", description: "We analyze your GBP performance data — search queries, profile views, direction requests, and phone calls — to refine your local SEO strategy continuously.", image: "https://picsum.photos/seed/gbp-feature-5/800/500" },
@@ -31,7 +31,7 @@ const features = [
 const faqItems = [
   { question: "What is included in your Google Business Profile management service?", answer: "Our GBP management service includes profile optimization, review management, post creation, Q&A management, insights analysis, and multi-location management. We ensure your profile is fully optimized to rank in Google's local pack and attract nearby customers." },
   { question: "How long does it take to see results from GBP management?", answer: "Most clients see improvements in profile views and search impressions within 2–4 weeks. Achieving top 3 local pack rankings typically takes 2–3 months of consistent optimization and review management." },
-  { question: "Do you work with businesses in Lagos and across Nigeria?", answer: "Yes! We specialize in helping Lagos businesses dominate local search results. Whether you're in Ikeja, Victoria Island, Lekki, or anywhere in Nigeria, our GBP strategies are tailored to your local market." },
+  { question: "Do you work with businesses in Lagos and across Nigeria?", answer: "Yes! We specialize in helping Lagos businesses dominate local search results. Whether you&apos;re in Ikeja, Victoria Island, Lekki, or anywhere in Nigeria, our GBP strategies are tailored to your local market." },
   { question: "How much does your GBP management service cost?", answer: "Our pricing starts at ₦150,000 per month for single-location businesses. Multi-location management and enterprise plans are quoted based on the number of profiles and scope of work." },
   { question: "Can I combine GBP management with other services?", answer: "Absolutely. GBP management works best alongside Bing Business Management, local SEO content, and paid advertising to create a comprehensive local digital presence." },
 ]
@@ -153,7 +153,7 @@ export default function GoogleBusinessProfilePage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Local SEO Specialists</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">Our team stays at the forefront of Google's local search algorithm updates, ensuring your GBP is always optimized using the latest best practices and strategies.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">Our team stays at the forefront of Google&apos;s local search algorithm updates, ensuring your GBP is always optimized using the latest best practices and strategies.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">
@@ -162,7 +162,7 @@ export default function GoogleBusinessProfilePage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Proven Local Results</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We have helped 40+ businesses achieve top 3 rankings in Google's local pack, with an average 150% increase in profile views and direction requests within 3 months.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We have helped 40+ businesses achieve top 3 rankings in Google&apos;s local pack, with an average 150% increase in profile views and direction requests within 3 months.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">
@@ -171,7 +171,7 @@ export default function GoogleBusinessProfilePage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-1">Comprehensive Approach</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">We don't just set up your profile — we manage every aspect including reviews, posts, Q&A, insights, and multi-location coordination for complete local dominance.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">We don&apos;t just set up your profile — we manage every aspect including reviews, posts, Q&A, insights, and multi-location coordination for complete local dominance.</p>
                 </div>
               </div>
               <div className="flex gap-6 items-start">

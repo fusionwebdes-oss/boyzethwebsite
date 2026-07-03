@@ -35,7 +35,6 @@ export default function FreeAuditPage() {
   const [scanError, setScanError] = useState('')
   const [scanResult, setScanResult] = useState<ScanResult | null>(null)
   const [form, setForm] = useState({ name: '', email: '', phone: '', business: '' })
-  const [submitted, setSubmitted] = useState(false)
   const [sending, setSending] = useState(false)
   const [formError, setFormError] = useState('')
 
@@ -70,7 +69,6 @@ export default function FreeAuditPage() {
         body: JSON.stringify({ ...form, url: url.trim() }),
       })
       if (!res.ok) throw new Error('Failed to send')
-      setSubmitted(true)
       setPhase('done')
     } catch {
       setFormError('Something went wrong. Please try again or email us directly.')
