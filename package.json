@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "pages:build": "npm run build && npx wrangler pages deploy out --branch main",
+    "pages:dev": "npx wrangler pages dev out -- npx wrangler pages functions"
   },
   "dependencies": {
     "next": "16.2.9",
