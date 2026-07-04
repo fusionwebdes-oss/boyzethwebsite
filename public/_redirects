@@ -1,0 +1,2 @@
+# Redirect www to apex
+www.boyzethsolutions.com/* https://boyzethsolutions.com/:splat 301
